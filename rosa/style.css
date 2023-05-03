@@ -5,12 +5,22 @@
     font-family: 'Jost', sans-serif;
 }
 
+:root{
+    --main-bg-color:white;
+    --secondary-bg-color:#FF7F99;
+    --button-bg-color:#ffca41;
+    --button-hoover-color:#FBE7B4; 
+    --main-text-color: black;
+    --title-text-color:#FF7F99;
+    --secondary-text-color: white;
+}
+
 
 /* Encabezado */
 
 header {
     height: 100px;
-    background-color: #FF7F99;
+    background-color: var(--secondary-bg-color);
     display: flex;
     justify-content: space-between;
     padding: 0% 3%
@@ -30,14 +40,14 @@ nav {
 .nav_button {
     border: transparent;
     background: transparent;
-    color: white;
+    color: var(--secondary-text-color);
     font-size: 24px;
     padding: 3px 40px 3px 40px;
     border-radius: 16px;
 }
 
 .nav_button:hover {
-    background: #FBE7B4;   
+    background: var(--button-hoover-color);  
 }
 
 /* Sección principal landing page */
@@ -50,7 +60,7 @@ main {
 }
 
 .imagen_principal{
-    background: #FF7F99;
+    background: var(--secondary-bg-color);
     width: 40%;
     height: 40%;
     border-radius: 50% 0% 50% 50%;
@@ -69,7 +79,7 @@ main {
 .titulo {
     margin-top: 40px;
     font-size: 85px;
-    color: #FF7F99;
+    color: var(--secondary-bg-color);
     line-height: .8;
 }
 
@@ -100,8 +110,8 @@ main {
     border-style: none;
     width:30%;
     height: 40px;
-    background: #ffca41;
-    color: white;
+    background: var(--button-bg-color);
+    color: var(--secondary-text-color);
     font-size: 15px;
 }
 
@@ -125,9 +135,9 @@ main {
 
 .main_button2 {
     border-radius: 30px;
-    border-color: white;
-    background: #ffca41;
-    color: white;
+    border-color: var(--main-bg-color);
+    background: var(--button-bg-color);
+    color: var(--secondary-text-color);
     font-size: 15px;
     font-weight: 700;
     position: absolute;
@@ -139,7 +149,7 @@ main {
 
 footer {
     display: grid;
-    background: #FF7F99;
+    background: var(--secondary-bg-color);
     grid-template-columns: repeat(5, 20%)
 }
 
@@ -147,7 +157,7 @@ footer {
     display: grid;
     justify-items: center;
     align-items: center;
-    color: white;
+    color: var(--secondary-text-color);
     margin: 70px 0px;
 }
 
@@ -157,7 +167,7 @@ footer {
 
 .coder p {
     font-size: 16px;
-    color: black;
+    color: var(--main-text-color);
     margin-top: 3px;
     margin-bottom: 10px;
 }
@@ -183,5 +193,5 @@ footer {
 
 a {
     text-decoration: none;
-    color: white;    
+    color: var(--secondary-text-color);  
 }
