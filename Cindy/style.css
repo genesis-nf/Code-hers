@@ -3,7 +3,7 @@
 * {
     margin: 0px;
     font-family: 'Jost', sans-serif;
-}
+}       
 
 
 /* Encabezado */
@@ -88,7 +88,7 @@ main {
 .contact{
     margin-top: 30px;
     display: flex;
-}
+} 
 
 .contact img{
     width: 40px;
@@ -98,8 +98,8 @@ main {
 .main_button {
     border-radius: 40px;
     border-style: none;
-    width:30%;
     height: 40px;
+    width: 170px;
     background: #ffca41;
     color: white;
     font-size: 15px;
