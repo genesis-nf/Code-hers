@@ -281,6 +281,13 @@ a {
         display: none;
     }
 
+    .mensaje_enviado{
+        justify-content: center;
+        margin: 50% 0%;
+        text-align: center;
+        align-items: center;
+    }
+
     footer{
         display: grid;
         grid-template-columns: 100%;
