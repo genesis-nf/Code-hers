@@ -78,19 +78,6 @@ main {
     width: 40%;
 }
 
-.titulo {
-    margin-top:90px ;
-    font-size: 85px;
-    color: var(--title-text-color);
-    line-height: .8;
-}
-
-.subtitulo {
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 12px;
-}
-
 .main_button {
     border-radius: 40px;
     border-style: none;
@@ -103,35 +90,6 @@ main {
     margin-top: 23px;
 }
 
-/* Sección principal página desarrolladores */
-
-.texto_coder {
-    width: 453px;
-    position: relative;
-}
-
-.descripcion {
-    text-align: justify;
-}
-
-.linkedin-coder {
-    width: 45px;
-    height: 45px;
-    margin-top: 25px;
-    margin-right: 15px;
-}
-
-.main_button2 {
-    border-radius: 30px;
-    border-color: var(--main-bg-color);
-    background: var(--button-bg-color);
-    color: var(--secondary-text-color);
-    font-size: 15px;
-    font-weight: 700;
-    position: absolute;
-    padding: 3px 50px 15px 50px;
-    margin-top: 25px;
-}
 
 /*Formulario*/
 
@@ -249,4 +207,59 @@ footer {
 a {
     text-decoration: none;
     color: var(--secondary-text-color);    
+}
+
+@media (max-width: 750px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 1px;
+        height: 200px;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+        display: flex;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    
+    .logo{
+        justify-content: center;
+    }
+
+    .logo img {
+        margin: auto;
+        padding: auto;
+    }
+
+    .formulario{
+        margin: 30px;
+        margin-bottom: 50%;
+        font-size: 20px;
+    }
+
+    .main_button{
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    
+    .imagen_principal{
+        display: none;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+
 }
