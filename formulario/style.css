@@ -100,7 +100,12 @@ form {
     margin: 0 auto;
   }
   
-  label {
+.titulo-form {
+    color: var(--title-text-color);
+}
+
+
+label {
     margin-top: 10px;
   }
   
@@ -120,7 +125,7 @@ form {
 
   input[type="text"]:focus,
   input[type="email"]:focus,
-  input[type="tel"],
+  input[type="tel"]:focus,
   textarea:focus {
     outline: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -150,12 +155,32 @@ form {
     background-color: var(--button-hoover-color);
 }
 
-/* he utilizado pseudoclases como :focus, :hover y :active para dar estilo 
-a los campos cuando el usuario interactúa con ellos. La pseudoclase :focus se aplica cuando el usuario hace clic en un campo, la pseudoclase :hover se aplica cuando el usuario pasa el cursor sobre 
-el botón de envío y la pseudoclase :active se aplica cuando el usuario hace clic en el botón de envío.
-*/
+/* Mensaje enviado */
 
-/*termina formulario*/
+.mensaje_enviado {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+.gracias {
+    margin: 0;
+    line-height: 0.8;
+    font-size: 85px;
+    color: var(--title-text-color);
+}
+
+.mensaje {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.imagen {
+    width: 45%;
+}
 
 
 /* Pie de página */

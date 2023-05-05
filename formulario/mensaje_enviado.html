@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codhers</title>
+    <title>Mensaje enviado</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,34 +29,12 @@
             <img src="img formulario.svg" alt="integrantes">
         </section>
 
-            <section class="formulario">
-                <h2 class="titulo-form">Formulario de Contacto</h2>
-                <p class="texto-form">Déjanos tus comentarios y en breve te contactaremos</p>
-                    <form action="./mensaje_enviado.html">
-
-                        <label for="nombre">Nombre y apellidos:</label>
-                        <input type="text" id="nombre" name="nombre" required maxlength="30" minlength="2">
-
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{4}-[0-9]{9}"
-                               required placeholder="xxxx-xxxxxxxxx"></span>
-                
-                        <label for="correo">E-mail:</label>
-                        <input type="email" id="correo" name="correo" required>
-
-                        <label for="asunto">Asunto:</label>
-                        <input type="text" id="asunto" name="asunto" required minlength="2">
-
-                        <label for="comentarios">Comentarios:</label>
-                        <textarea id="comentarios" name="comentarios" required></textarea>
-
-                        <div id="button-box">
-                            <button class="main_button" type="submit"> Enviar </button>
-                        </div>
-                </section>
-                </form>
-
-            </section>
+        </section>
+        <section class="mensaje_enviado">
+            <p class="gracias">Gracias</p>
+            <p class="mensaje">¡El mensaje se ha enviado correctamente!</p>
+            <img class="imagen" src="https://static.wixstatic.com/media/b804a8_2373f2bf33824ef8814b68ad7cb2e159~mv2.png/v1/fill/w_560,h_280,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/enviado.png" alt="icono de mensaje enviado">
+        </section>
     </main>
 
     <footer id="footer">
